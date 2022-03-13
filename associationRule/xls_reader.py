@@ -11,4 +11,6 @@ with open('input2.txt', 'w') as writer:
         if prev_index != index:
             writer.write('\n')
             prev_index = index
-        writer.write(product + " ")
+
+        product = product.replace(" ", "")
+        writer.write(product.lower() + " ")
